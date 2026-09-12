@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>GREEN-API Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="container">
+
+    <div class="left-panel">
+
+        <div class="connection-group">
+            <input type="text" id="idInstance" placeholder="idInstance">
+            <input type="password" id="apiTokenInstance" placeholder="ApiTokenInstance">
+        </div>
+
+        <div class="settings-group">
+            <button type="button" id="getSettingsButton">getSettings</button>
+            <button type="button" id="getStateInstanceButton">getStateInstance</button>
+        </div>
+
+        <div class="message-group">
+            <input type="text" id="phoneNumber" placeholder="77771234567">
+            <textarea id="message" placeholder="Hello World!"></textarea>
+
+            <button type="button" id="sendMessageButton">sendMessage</button>
+        </div>
+
+        <div class="file-group">
+            <input type="text" id="filePhoneNumber" placeholder="77771234567">
+            <input type="text" id="fileUrl" placeholder="https://site.com/img/horse.png">
+
+            <button type="button" id="sendFileByUrlButton">sendFileByUrl</button>
+        </div>
+
+    </div>
+
+    <div class="right-panel">
+        <label for="response">Ответ:</label>
+        <textarea id="response" readonly></textarea>
+    </div>
+
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
